@@ -1,11 +1,11 @@
 Package: scrollrevealR
 Type: Package
-Title: What the Package Does (Title Case)
+Title: Animate 'shiny' elements when scrolling to view them using the 'scrollrevealjs' library
 Version: 0.1.0
 Author: Mohamed El Fodil Ihaddaden
 Maintainer: Mohamed El Fodil Ihaddaden <ihaddaden.fodeil@gmail.com>
-Description: More about what it does (maybe more than one line)
-    Use four spaces when indenting paragraphs within the Description.
+Description: Allows the user to animate 'shiny' elements when scrolling to view them.
+    The animations are activated using the 'scrollrevealjs' library. See <https://scrollrevealjs.org/> for more information.
 License: MIT + file LICENSE
 Encoding: UTF-8
 LazyData: true
@@ -19,3 +19,5 @@ Suggests:
     rmarkdown
 VignetteBuilder: knitr
 RoxygenNote: 7.1.0
+
+ 
