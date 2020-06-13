@@ -18,43 +18,110 @@ knitr::opts_chunk$set(
 <!-- badges: start -->
 <!-- badges: end -->
 
-The goal of scrollrevealR is to ...
+`scrollrevealR` allows you to animate `shiny` elements when they scroll into view using the [scrollrevealjs library](https://scrollrevealjs.org/).
 
 ## Installation
 
-You can install the released version of scrollrevealR from [CRAN](https://CRAN.R-project.org) with:
 
-``` r
-install.packages("scrollrevealR")
-```
+You can install the development version of `scrollrevealR` from [GitHub](https://github.com/) with:
 
-And the development version from [GitHub](https://github.com/) with:
 
-``` r
+```{r eval=FALSE}
 # install.packages("devtools")
 devtools::install_github("feddelegrand7/scrollrevealR")
+
 ```
+
 ## Example
 
-This is a basic example which shows you how to solve a common problem:
+The `scrollrevealR` package has two functions: 
 
-```{r example}
++ `use_reveal()`: This function doesn't take any arguments. It activates the `scrollrevealjs` library. You can set it anywhere within the UI of your shiny app though it's preferable to implement it at bottom of the UI. 
+
++ `scroll_reveal()`: allows you to animate one or many shiny elements as they scroll into view. 
+
+
+Below an example of a simple shiny app that uses the `scrollrevealR` package: 
+
+
+```{r eval=FALSE}
+library(shiny)
 library(scrollrevealR)
-## basic example code
+
+ui <- fluidPage(
+
+  h1("Mtcars Plot"),
+
+  br(), br(),
+
+  plotOutput(outputId = "plt1"),
+
+  br(), br(),
+
+  h1("Iris Plot"),
+  
+  plotOutput(outputId = "plt2"),
+
+  br(), br(),
+
+  h1("ChickWeight Plot"),
+
+  plotOutput(outputId = "plt3"),
+
+  # Using the scroll_reveal() function -------------------------------------------
+  scroll_reveal(target = c("#plt1", "#plt2", "#plt3"), duration = 2000, distance = "100px"),
+
+  scroll_reveal(target = "h1", duration = 2000, distance = "100px"),
+  # ----------------------------------------------------------------------------- 
+
+  use_reveal(), # IMPORTANT! don't forget to activate the package with use_reveal()
+
+  # Making some space at the end
+
+  br(), br(), br(), br(), br(), br(), br(), br(), br(), br(), br(), br()
+
+)
+
+server <- function(input, output) {
+
+
+output$plt1 <-  renderPlot({
+
+    plot(mtcars)
+
+  })
+
+
+output$plt2 <- renderPlot({
+
+
+  plot(iris)
+
+})
+
+
+output$plt3 <- renderPlot({
+
+
+  plot(ChickWeight)
+
+
+})
+
+
+}
+
+shinyApp(ui = ui, server = server)
+
 ```
 
-What is special about using `README.Rmd` instead of just `README.md`? You can include R chunks like so:
 
-```{r cars}
-summary(cars)
-```
 
-You'll still need to render `README.Rmd` regularly, to keep `README.md` up-to-date.
 
-You can also embed plots, for example:
 
-```{r pressure, echo = FALSE}
-plot(pressure)
-```
 
-In that case, don't forget to commit and push the resulting figure files, so they display on GitHub!
+
+
+
+
+
