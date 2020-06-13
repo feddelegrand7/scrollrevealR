@@ -12,8 +12,44 @@
 #' @export
 #'
 #' @examples
+#' if (interactive()) {
+#'
+
+#'ui <- fluidPage(
+
+#'h1("TIME"),
+#'br(),
+#'br(),
+#'h1("SPACE"),
+#'br(),
+#'br(),
+#'h1("PIZZA"),
+#'br(),
+#'br(),
+#'br(), br(), br(), br(), br(), br(), br(), br(), br(), br(), br(), br(), br(), br(),
+#'br(), br(), br(), br(), br(), br(), br(), br(), br(), br(), br(), br(), br(), br(),
+#'br(), br(), br(), br(), br(), br(), br(), br(), br(), br(), br(), br(), br(), br(),
+#'br(), br(), br(), br(), br(), br(), br(), br(), br(), br(), br(), br(), br(), br(),
+#'
+#'# Using the scroll_reveal() function
+#'scroll_reveal(target = "h1", duration = 2000, distance = "100px"),
+#'
+#'# IMPORTANT! don't forget to set up the scrollrevealR package
+#'use_reveal(),
+#')
+#'server <- function(input, output) {
+#'
+#'}
+#'
+#'shinyApp(ui = ui, server = server)
+#' }
 
 scroll_reveal <- function(target, duration = 1000, delay = 100, distance = "20px",  reset = T){
+
+
+  if(!is.character(target) | !is.character(distance)){
+    stop("target and distance must be provided as characer strings")
+  }
 
 
   if(reset){
