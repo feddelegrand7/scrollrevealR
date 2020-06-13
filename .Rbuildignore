@@ -4,3 +4,4 @@
 ^README\.Rmd$
 ^cran-comments\.md$
 ^CRAN-RELEASE$
+^CODE_OF_CONDUCT\.md$
