@@ -2,8 +2,8 @@ Package: scrollrevealR
 Type: Package
 Title: What the Package Does (Title Case)
 Version: 0.1.0
-Author: Who wrote it
-Maintainer: The package maintainer <yourself@somewhere.net>
+Author: Mohamed El Fodil Ihaddaden
+Maintainer: Mohamed El Fodil Ihaddaden <ihaddaden.fodeil@gmail.com>
 Description: More about what it does (maybe more than one line)
     Use four spaces when indenting paragraphs within the Description.
 License: MIT + file LICENSE
@@ -11,3 +11,11 @@ Encoding: UTF-8
 LazyData: true
 URL: https://github.com/feddelegrand7/scrollrevealR
 BugReports: https://github.com/feddelegrand7/scrollrevealR/issues
+Imports: 
+    htmltools,
+    glue
+Suggests: 
+    knitr,
+    rmarkdown
+VignetteBuilder: knitr
+RoxygenNote: 7.1.0

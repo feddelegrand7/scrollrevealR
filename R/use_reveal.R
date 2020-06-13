@@ -1,13 +1,13 @@
 
 #' Enable the scrollrevealjs library
-#' @description The function activates the capabilities of the scrollrevealjs library. It should be run at the beginning of the UI
+#' @description The function activates the capabilities of the scrollrevealjs library. The user can put it anywhere within the UI but it's preferable to implement it at the bottom of the UI.
 
 #' @return called for the side effect of activating the scrollrevealjs library
 #' @export
 #'
 #' @examples \donttest{
 #'
-#' # Put the function at the beginning of your Shiny app, within the UI
+#' # Put the function at the bottom of the UI
 #'
 #' use_reveal()
 #'
