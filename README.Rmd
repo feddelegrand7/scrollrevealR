@@ -115,7 +115,7 @@ shinyApp(ui = ui, server = server)
 
 ```
 
-
+![](man/figures/exampleapp.gif)
 
 
 

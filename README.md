@@ -105,3 +105,5 @@ output$plt3 <- renderPlot({
 
 shinyApp(ui = ui, server = server)
 ```
+
+![](man/figures/exampleapp.gif)

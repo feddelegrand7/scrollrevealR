@@ -8,7 +8,7 @@
 #' @param distance Controls how far elements move when revealed. Default to 20px
 #' @param reset logical, should the function animate the element each time it scrolls into view or only once. Defaults to TRUE.
 #'
-#' @return
+#' @return An animated shiny element
 #' @export
 #'
 #' @examples

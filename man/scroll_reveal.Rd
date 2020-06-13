@@ -24,7 +24,7 @@ scroll_reveal(
 \item{reset}{logical, should the function animate the element each time it scrolls into view or only once. Defaults to TRUE.}
 }
 \value{
-
+An animated shiny element
 }
 \description{
 Animate elements when scrolling to view them
