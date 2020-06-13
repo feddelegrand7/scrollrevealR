@@ -9,17 +9,20 @@ scroll_reveal(
   duration = 1000,
   delay = 100,
   distance = "20px",
+  origin = "bottom",
   reset = T
 )
 }
 \arguments{
 \item{target}{The elements to animate as they scroll into view}
 
-\item{duration}{The duration of the animation in milliseconds. Default to 1000 ms}
+\item{duration}{The duration of the animation in milliseconds. Defaults to 1000 ms}
 
-\item{delay}{The desired delay in milliseconds before triggering the animation. Default to 100 ms}
+\item{delay}{The desired delay in milliseconds before triggering the animation. Defaults to 100 ms}
 
-\item{distance}{Controls how far elements move when revealed. Default to 20px}
+\item{distance}{Controls how far elements move when revealed. Defaults to 20px}
+
+\item{origin}{Specifies what direction elements come from when revealed ("top", "bottom", "right", "left"). Defaults to "bottom"}
 
 \item{reset}{logical, should the function animate the element each time it scrolls into view or only once. Defaults to TRUE.}
 }

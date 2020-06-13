@@ -3,9 +3,10 @@
 #' Animate elements when scrolling to view them
 #'
 #' @param target The elements to animate as they scroll into view
-#' @param duration The duration of the animation in milliseconds. Default to 1000 ms
-#' @param delay The desired delay in milliseconds before triggering the animation. Default to 100 ms
-#' @param distance Controls how far elements move when revealed. Default to 20px
+#' @param duration The duration of the animation in milliseconds. Defaults to 1000 ms
+#' @param delay The desired delay in milliseconds before triggering the animation. Defaults to 100 ms
+#' @param distance Controls how far elements move when revealed. Defaults to 20px
+#' @param origin Specifies what direction elements come from when revealed ("top", "bottom", "right", "left"). Defaults to "bottom"
 #' @param reset logical, should the function animate the element each time it scrolls into view or only once. Defaults to TRUE.
 #'
 #' @return An animated shiny element
@@ -44,7 +45,7 @@
 #'shinyApp(ui = ui, server = server)
 #' }
 
-scroll_reveal <- function(target, duration = 1000, delay = 100, distance = "20px",  reset = T){
+scroll_reveal <- function(target, duration = 1000, delay = 100, distance = "20px", origin = "bottom", reset = T){
 
 
   if(!is.character(target) | !is.character(distance)){
@@ -59,6 +60,7 @@ scroll_reveal <- function(target, duration = 1000, delay = 100, distance = "20px
 
     duration: {duration},
     reset: true,
+    origin:'{origin}',
     delay:{delay},
     distance: '{distance}'}});")
 
@@ -71,6 +73,7 @@ scroll_reveal <- function(target, duration = 1000, delay = 100, distance = "20px
 
     commande <- glue::glue("ScrollReveal().reveal('{target}', {{
                            duration: {duration},
+                           origin:'{origin}',
                            delay: {delay},
                            distance: '{distance}'}});")
 

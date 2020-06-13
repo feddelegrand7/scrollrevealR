@@ -1,6 +1,6 @@
 Package: scrollrevealR
 Type: Package
-Title: Animate 'shiny' elements when scrolling to view them using the 'scrollrevealjs' library
+Title: Animate 'shiny' Elements when they Scroll into View using the 'scrollrevealjs' Library
 Version: 0.1.0
 Author: Mohamed El Fodil Ihaddaden
 Maintainer: Mohamed El Fodil Ihaddaden <ihaddaden.fodeil@gmail.com>
