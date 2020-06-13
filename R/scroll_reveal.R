@@ -6,7 +6,7 @@
 #' @param duration The duration of the animation in milliseconds. Default to 1000 ms
 #' @param delay The desired delay in milliseconds before triggering the animation. Default to 100 ms
 #' @param distance Controls how far elements move when revealed. Default to 20px
-#' @param reset Boolean, should the function animate the element each time it scrolls into view or only once. Defaults to TRUE.
+#' @param reset logical, should the function animate the element each time it scrolls into view or only once. Defaults to TRUE.
 #'
 #' @return
 #' @export

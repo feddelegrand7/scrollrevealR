@@ -21,7 +21,7 @@ scroll_reveal(
 
 \item{distance}{Controls how far elements move when revealed. Default to 20px}
 
-\item{reset}{Boolean, should the function animate the element each time it scrolls into view or only once. Defaults to TRUE.}
+\item{reset}{logical, should the function animate the element each time it scrolls into view or only once. Defaults to TRUE.}
 }
 \value{
 
