@@ -106,6 +106,8 @@ output$plt3 <- renderPlot({
 shinyApp(ui = ui, server = server)
 ```
 
+![](man/figures/exampleapp.gif)
+
 ## Code of Conduct
 
 Please note that the scrollrevealR project is released with a
