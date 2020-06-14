@@ -11,6 +11,10 @@
 into view using the [scrollrevealjs
 library](https://scrollrevealjs.org/).
 
+<br>
+
+![](man/figures/exampleapp2.gif)
+
 ## Installation
 
 You can install the development version of `scrollrevealR` from

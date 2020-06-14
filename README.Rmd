@@ -20,6 +20,11 @@ knitr::opts_chunk$set(
 
 `scrollrevealR` allows you to animate `shiny` elements when they scroll into view using the [scrollrevealjs library](https://scrollrevealjs.org/).
 
+<br>
+
+
+![](man/figures/exampleapp2.gif)
+
 ## Installation
 
 
