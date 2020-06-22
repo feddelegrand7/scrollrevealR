@@ -11,6 +11,8 @@
 into view using the [scrollrevealjs
 library](https://scrollrevealjs.org/).
 
+![](man/figures/exampleapp2.gif)
+
 <br>
 
 ## Installation
@@ -107,6 +109,8 @@ output$plt3 <- renderPlot({
 
 shinyApp(ui = ui, server = server)
 ```
+
+![](man/figures/exampleapp.gif)
 
 ## Code of Conduct
 
