@@ -10,7 +10,7 @@ scroll_reveal(
   delay = 100,
   distance = "20px",
   origin = "bottom",
-  reset = T
+  reset = TRUE
 )
 }
 \arguments{

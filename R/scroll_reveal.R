@@ -45,7 +45,7 @@
 #'shinyApp(ui = ui, server = server)
 #' }
 
-scroll_reveal <- function(target, duration = 1000, delay = 100, distance = "20px", origin = "bottom", reset = T){
+scroll_reveal <- function(target, duration = 1000, delay = 100, distance = "20px", origin = "bottom", reset = TRUE){
 
 
   if(!is.character(target) | !is.character(distance)){

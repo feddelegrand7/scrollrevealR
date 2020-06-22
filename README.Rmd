@@ -13,7 +13,7 @@ knitr::opts_chunk$set(
 )
 ```
 
-# scrollrevealR
+# scrollrevealR 
 
 <!-- badges: start -->
 <!-- badges: end -->
@@ -22,8 +22,6 @@ knitr::opts_chunk$set(
 
 <br>
 
-
-![](man/figures/exampleapp2.gif)
 
 ## Installation
 
@@ -119,7 +117,7 @@ output$plt3 <- renderPlot({
 shinyApp(ui = ui, server = server)
 
 ```
-![](man/figures/exampleapp.gif)
+
 
 ## Code of Conduct
 

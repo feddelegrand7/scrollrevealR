@@ -13,8 +13,6 @@ library](https://scrollrevealjs.org/).
 
 <br>
 
-![](man/figures/exampleapp2.gif)
-
 ## Installation
 
 You can install the development version of `scrollrevealR` from
@@ -109,8 +107,6 @@ output$plt3 <- renderPlot({
 
 shinyApp(ui = ui, server = server)
 ```
-
-![](man/figures/exampleapp.gif)
 
 ## Code of Conduct
 
