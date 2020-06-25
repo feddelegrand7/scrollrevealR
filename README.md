@@ -21,6 +21,14 @@ library](https://scrollrevealjs.org/).
 
 ## Installation
 
+You can install the `scrollrevealR` package from
+[CRAN](https://CRAN.R-project.org/package=scrollrevealR) with:
+
+``` r
+
+install.packages("scrollrevealR")
+```
+
 You can install the development version of `scrollrevealR` from
 [GitHub](https://github.com/) with:
 

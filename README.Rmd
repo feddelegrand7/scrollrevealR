@@ -35,6 +35,16 @@ status](https://www.r-pkg.org/badges/version/scrollrevealR)
 
 ## Installation
 
+You can install the `scrollrevealR` package from [CRAN](https://CRAN.R-project.org/package=scrollrevealR) with: 
+
+```{r, eval=FALSE}
+
+install.packages("scrollrevealR")
+
+
+```
+
+
 
 You can install the development version of `scrollrevealR` from [GitHub](https://github.com/) with:
 
