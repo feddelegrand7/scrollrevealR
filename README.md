@@ -5,6 +5,10 @@
 
 <!-- badges: start -->
 
+![CRAN status](https://www.r-pkg.org/badges/version/scrollrevealR)
+
+![](http://cranlogs.r-pkg.org/badges/grand-total/scrollrevealR?color=blue)
+
 <!-- badges: end -->
 
 `scrollrevealR` allows you to animate `shiny` elements when they scroll
