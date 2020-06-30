@@ -49,7 +49,7 @@ The `scrollrevealR` package has two functions:
   - `scroll_reveal()`: allows you to animate one or many shiny elements
     as they scroll into view.
 
-## Important: when you apply the `scroll_reveal()` function on Shiny Tables, they tend to disappear when you scroll down to check the last observations of the table which is annoying. In order to deal with this issue, you can use the `reset = FALSE` argument which will trigger an animation only once.
+#### Important: when you apply the `scroll_reveal()` function on Shiny Tables, they tend to disappear when you scroll down to check the last observations of the table which is annoying. In order to deal with this issue, you can use the `reset = FALSE` argument which will trigger an animation only once.
 
 Below an example of a simple shiny app that uses the `scrollrevealR`
 package:
@@ -125,6 +125,12 @@ shinyApp(ui = ui, server = server)
 ```
 
 ![](man/figures/exampleapp.gif)
+
+## Commercial License
+
+If you use the `scrollrevealR` package for commercial usage, You can buy
+a Commercial License from the `scrollreveal`
+[website](https://scrollrevealjs.org/pricing/).
 
 ## Code of Conduct
 
