@@ -5,9 +5,23 @@
 
 <!-- badges: start -->
 
-![CRAN status](https://www.r-pkg.org/badges/version/scrollrevealR)
+[![CRAN\_Status\_Badge](https://www.r-pkg.org/badges/version/scrollrevealR)](https://cran.r-project.org/package=scrollrevealR)
 
-![](http://cranlogs.r-pkg.org/badges/grand-total/scrollrevealR?color=blue)
+[![CRAN\_time\_from\_release](https://www.r-pkg.org/badges/ago/scrollrevealR)](https://cran.r-project.org/package=scrollrevealR)
+
+[![metacran
+downloads](https://cranlogs.r-pkg.org/badges/scrollrevealR)](https://cran.r-project.org/package=scrollrevealR)
+
+[![metacran
+downloads](https://cranlogs.r-pkg.org/badges/grand-total/scrollrevealR)](https://cran.r-project.org/package=scrollrevealR)
+
+[![license](https://img.shields.io/github/license/mashape/apistatus.svg)](https://choosealicense.com/licenses/mit/)
+
+[![Travis build
+status](https://travis-ci.com/feddelegrand7/scrollrevealR.svg?branch=master)](https://travis-ci.com/feddelegrand7/scrollrevealR)
+
+[![R
+badge](https://img.shields.io/badge/Build%20with-♥%20and%20R-blue)](https://github.com/feddelegrand7/scrollrevealR)
 
 <!-- badges: end -->
 
