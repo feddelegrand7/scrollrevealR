@@ -15,8 +15,6 @@ downloads](https://cranlogs.r-pkg.org/badges/scrollrevealR)](https://cran.r-proj
 [![metacran
 downloads](https://cranlogs.r-pkg.org/badges/grand-total/scrollrevealR)](https://cran.r-project.org/package=scrollrevealR)
 
-[![license](https://img.shields.io/github/license/mashape/apistatus.svg)](https://choosealicense.com/licenses/mit/)
-
 [![Travis build
 status](https://travis-ci.com/feddelegrand7/scrollrevealR.svg?branch=master)](https://travis-ci.com/feddelegrand7/scrollrevealR)
 
@@ -53,12 +51,7 @@ devtools::install_github("feddelegrand7/scrollrevealR")
 
 ## Example
 
-The `scrollrevealR` package has two functions:
-
-  - `use_reveal()`: This function doesn’t take any arguments. It
-    activates the `scrollrevealjs` library. You can set it anywhere
-    within the UI of your shiny app though it’s preferable to implement
-    it at bottom of the UI.
+In order to use `scrollrevealR`, you only need to use one function:
 
   - `scroll_reveal()`: allows you to animate one or many shiny elements
     as they scroll into view.
@@ -97,8 +90,6 @@ ui <- fluidPage(
 
   scroll_reveal(target = "h1", duration = 2000, distance = "100px"),
   # ----------------------------------------------------------------------------- 
-
-  use_reveal(), # IMPORTANT! don't forget to activate the package with use_reveal()
 
   # Making some space at the end
 
