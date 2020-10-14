@@ -6,3 +6,5 @@
 ^CRAN-RELEASE$
 ^CODE_OF_CONDUCT\.md$
 ^\.travis\.yml$
+^man/figures/exampleapp\.gif$
+^man/figures/exampleapp2\.gif$
