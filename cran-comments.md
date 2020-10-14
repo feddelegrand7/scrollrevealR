@@ -11,7 +11,7 @@ Duration: 18.3s
 
 * This is a resubmission
 
-- I've used the htmlDependency() function from the htmltools package, now scrollrevealR works locally (the user doesn't need an internet connexion), it's also more robust as it relies on a local javascript file (see scrollreveal.min.js).
+- I've used the htmlDependency() function from the htmltools package, now scrollrevealR works locally (the user doesn't need an internet connection), it's also more robust as it relies on a local javascript file (see scrollreveal.min.js).
 
 - I've moved the GIFS to the .Rbuildignore file.
 
