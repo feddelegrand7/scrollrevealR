@@ -53,8 +53,6 @@ br(), br(), br(), br(), br(), br(), br(), br(), br(), br(), br(), br(), br(), br
 # Using the scroll_reveal() function
 scroll_reveal(target = "h1", duration = 2000, distance = "100px"),
 
-# IMPORTANT! don't forget to set up the scrollrevealR package
-use_reveal(),
 )
 server <- function(input, output) {
 

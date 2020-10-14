@@ -35,8 +35,6 @@
 #'# Using the scroll_reveal() function
 #'scroll_reveal(target = "h1", duration = 2000, distance = "100px"),
 #'
-#'# IMPORTANT! don't forget to set up the scrollrevealR package
-#'use_reveal(),
 #')
 #'server <- function(input, output) {
 #'
@@ -48,41 +46,45 @@
 scroll_reveal <- function(target, duration = 1000, delay = 100, distance = "20px", origin = "bottom", reset = TRUE){
 
 
-  if(!is.character(target) | !is.character(distance)){
+
+  if (!is.character(target) | !is.character(distance)) {
     stop("target and distance must be provided as characer strings")
   }
 
 
-  if(reset){
 
-
-    commande <- glue::glue("ScrollReveal().reveal('{target}', {{
+  if (reset) {
+    commande <- glue::glue(
+      "ScrollReveal().reveal('{target}', {{
 
     duration: {duration},
     reset: true,
     origin:'{origin}',
     delay:{delay},
-    distance: '{distance}'}});")
+    distance: '{distance}'}});"
+    )
 
-    htmltools::tags$script(htmltools::HTML(commande))
 
 
 
 
   } else {
-
-    commande <- glue::glue("ScrollReveal().reveal('{target}', {{
+    commande <- glue::glue(
+      "ScrollReveal().reveal('{target}', {{
                            duration: {duration},
                            origin:'{origin}',
                            delay: {delay},
-                           distance: '{distance}'}});")
-
-    htmltools::tags$script(htmltools::HTML(commande))
+                           distance: '{distance}'}});"
+    )
 
 
 
   }
 
+
+  htmltools::tagList(scrollreveal_dep(),
+
+                     htmltools::tags$script(htmltools::HTML(commande)))
 
 
 
